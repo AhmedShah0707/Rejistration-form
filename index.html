@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'poppins', sans serif;}
+	.contact{
+		position:relative;
+		min-height:100vh;
+		padding:50px 100px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		background:url(christian-wiediger-WkfDrhxDMC8-unsplash.jpg);
+		background-size:cover;}
+		.contact .content{
+			max-width:800px;
+			text-align:center;}
+			.contact .content h2{
+				font-size:36px;
+				font-weight:500px;
+				color:#FFF;}
+.contact .content p{
+				font-weight:300px;
+				color:#FFF;}
+				.container{
+					width:100%;
+					display:flex;
+					justify-content:center;
+					align-items:center;
+					margin-top:30px;}
+					.container .contactinfo{
+						width:30%;
+						display:flex;
+						flex-direction:column;}
+						.container .contactinfo .box{
+							position:relative;
+							padding:20px 0;
+							display:flex;}
+							.container .contactinfo .box .icon{
+								min-width:55px;
+								height:55px;
+								background:#FFF;
+								display:flex;
+								justify-content:center;
+								align-items:center;
+								border-radius:55%;
+								font-size:22px;
+								}
+								.container .contactinfo .box .text{
+									display:flex;
+									margin-left:20px;
+									font-size:15px;
+									color:#FFF;
+									flex-direction:column;}
+									.container .contactinfo .box .text h3{
+										font-weight:500;
+										color:#FFF;
+										font-size:25px;}
+										
+										.contactform{
+											width:40%;
+											padding:40px;
+											background:#FFF;}
+											.contactform h2{
+												font-size:30px;
+												color:#333;
+												font-weight:500;}
+												.contactform .inputbox{
+													position:relative;
+													width:100%;
+													margin-top:10px;}
+													.contactform .inputbox input,.contactform .inputbox textarea
+													{
+														width:100%;
+														padding:5px 0;
+														font-size:15px;
+														margin:10px 0;
+														border:none;
+														border-bottom:2px solid #000;
+														outline:none;
+														resize:none;}
+														.contactform .inputbox span{
+															position:absolute;
+															left:0;
+															padding:5px 0;
+														font-size:15px;
+														margin:10px 0;
+														pointer-events:none;
+														transition:0.5s;
+														color:#666;}
+						
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox tetxarea:focus ~ span,
+.contactform .inputbox tetxarea:valid ~ span{
+	color:#e91e63;
+	font-size:12px;
+	transform:translate(-35px);}
+	
+	.contactform .inputbox input[type="submit"]{
+		width:100px;
+		background:#00bcd4;
+		color:#FFF;
+		border:none;
+		cursor:pointer;
+		padding:10px;
+		font-size:18px;}
+		@media (max-width:991px){
+			.contact{
+				padding:50px;}
+				.container{
+					flex-direction:column;}
+					.container .contactinfo{
+						margin-bottom:40px;}
+						.container .contactinfo,
+						.contactform{
+							width:100%;}
+			
+			
+			
+			}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+<section class="contact">
+<div class="content">
+<h2>ADMISSION FORM</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</div>
+<div class="container">
+<div class="contactinfo">
+<div class="box">
+<div class="icon"><img src="placeholder.png"></div>
+<div class="text">
+<h3><b>Adress</b></h3>
+<p>Aptech Gulshan-e-Iqbal</p>
+</div>
+</div>
+<div class="box">
+<div class="icon"><img src="email.png"></div>
+<div class="text">
+<h3><b>Email</b></h3>
+<p>auto-world365@gmail.com</p>
+</div>
+</div>
+<div class="box">
+<div class="icon"><img src="phone-call.png"></div>
+<div class="text">
+<h3><b>Phone</b></h3>
+<p>0325486197</p>
+</div>
+</div>
+</div>
+<div class="contactform">
+<form>
+<h2>Submit Your Form</h2>
+<div class="inputbox">
+<input type="text" name="" required>
+<span>First Name</span>
+</div>
+<div class="inputbox">
+<input type="text" name="" required>
+<span>Last Name</span>
+</div>
+<div class="inputbox">
+<input type="text" name="" required>
+<span>ID No</span>
+</div>
+<div class="inputbox">
+<input type="text" name="" required>
+<span>E-mail</span>
+</div>
+<div class="inputbox">
+<input type="submit" name="" value="Submit">
+</div>
+</form>
+</div>
+</section>
+</body>
+</html>
